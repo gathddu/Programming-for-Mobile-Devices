@@ -1,0 +1,58 @@
+import { Actor } from '@types/index';
+
+export const actorsData: readonly Actor[] = [
+  {
+    id: '1',
+    name: 'Rachel McAdams',
+    character: 'Sarah',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop',
+    bio: 'Canadian actress known for her versatile roles in both indie films and major productions. Rachel McAdams has captivated audiences worldwide with her nuanced performances, demonstrating exceptional range from romantic dramas to intense thrillers, establishing herself as one of the most respected talents in contemporary cinema.',
+    birthDate: '1978-11-17',
+    birthPlace: 'London, Ontario, Canada',
+  },
+  {
+    id: '2',
+    name: 'Phoebe Waller-Bridge',
+    character: 'Fleabag',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop',
+    bio: 'British actress, screenwriter, and producer celebrated for her groundbreaking work on Fleabag. Phoebe Waller-Bridge revolutionized television comedy with her witty, introspective writing and fearless performances, earning critical acclaim and multiple Emmy awards for her innovative approach to storytelling and character development.',
+    birthDate: '1985-07-14',
+    birthPlace: 'Hammersmith, London, England',
+  },
+  {
+    id: '3',
+    name: 'Willem Dafoe',
+    character: 'The Painter',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop',
+    bio: 'Legendary Dutch actor renowned for his intense and transformative performances across diverse genres. Willem Dafoe brings unparalleled depth and authenticity to every role, from avant-garde art films to major blockbusters, consistently delivering career-defining performances that showcase his extraordinary range and commitment to his craft.',
+    birthDate: '1955-07-22',
+    birthPlace: 'Appleton, Wisconsin, USA',
+  },
+  {
+    id: '4',
+    name: 'Domhnall Gleeson',
+    character: 'The Dreamer',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop',
+    bio: 'Irish actor celebrated for his compelling performances in critically acclaimed films and television productions. Domhnall Gleeson demonstrates remarkable versatility, seamlessly transitioning between intimate character studies and epic science fiction adventures, earning recognition for his thoughtful interpretations and magnetic screen presence.',
+    birthDate: '1983-05-12',
+    birthPlace: 'Dublin, Ireland',
+  },
+  {
+    id: '5',
+    name: 'Simon Pegg',
+    character: 'The Comedian',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop',
+    bio: 'British actor, comedian, and screenwriter known for his sharp wit and comedic timing. Simon Pegg has created iconic characters and collaborated on beloved films that blend humor with heart, establishing himself as a master of both comedy and dramatic roles while maintaining his reputation for intelligent, character-driven storytelling.',
+    birthDate: '1973-02-14',
+    birthPlace: 'Gloucester, England',
+  },
+  {
+    id: '6',
+    name: 'Emma Stone',
+    character: 'The Artist',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop',
+    bio: 'American actress and singer celebrated for her transformative performances and remarkable range. Emma Stone has earned critical acclaim and major awards for her work in diverse projects, from indie darlings to musical masterpieces, consistently demonstrating her ability to inhabit complex characters with authenticity and emotional depth.',
+    birthDate: '1988-11-06',
+    birthPlace: 'Scottsdale, Arizona, USA',
+  },
+];
