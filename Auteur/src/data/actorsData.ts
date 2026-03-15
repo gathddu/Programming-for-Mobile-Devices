@@ -1,11 +1,11 @@
-import { Actor } from '@types/index';
+import { Actor } from '../types/index';
 
 export const actorsData: readonly Actor[] = [
   {
     id: '1',
     name: 'Rachel McAdams',
-    character: 'Sarah',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop',
+    character: 'Allie',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop',
     bio: 'Canadian actress known for her versatile roles in both indie films and major productions. Rachel McAdams has captivated audiences worldwide with her nuanced performances, demonstrating exceptional range from romantic dramas to intense thrillers, establishing herself as one of the most respected talents in contemporary cinema.',
     birthDate: '1978-11-17',
     birthPlace: 'London, Ontario, Canada',
@@ -22,7 +22,7 @@ export const actorsData: readonly Actor[] = [
   {
     id: '3',
     name: 'Willem Dafoe',
-    character: 'The Painter',
+    character: 'Bobby',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop',
     bio: 'Legendary Dutch actor renowned for his intense and transformative performances across diverse genres. Willem Dafoe brings unparalleled depth and authenticity to every role, from avant-garde art films to major blockbusters, consistently delivering career-defining performances that showcase his extraordinary range and commitment to his craft.',
     birthDate: '1955-07-22',
@@ -49,7 +49,7 @@ export const actorsData: readonly Actor[] = [
   {
     id: '6',
     name: 'Emma Stone',
-    character: 'The Artist',
+    character: 'Jules',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop',
     bio: 'American actress and singer celebrated for her transformative performances and remarkable range. Emma Stone has earned critical acclaim and major awards for her work in diverse projects, from indie darlings to musical masterpieces, consistently demonstrating her ability to inhabit complex characters with authenticity and emotional depth.',
     birthDate: '1988-11-06',

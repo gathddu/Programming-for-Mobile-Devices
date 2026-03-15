@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { ErrorBoundary } from './src/components/ErrorBoundary';
-import { ActorsScreen } from './src/screens/ActorsScreen';
+import { ErrorBoundary } from './src/components/ErrorBoundary.tsx';
+import { ActorsScreen } from './src/screens/ActorsScreen.tsx';
 
 export default function App(): React.ReactElement {
   return (

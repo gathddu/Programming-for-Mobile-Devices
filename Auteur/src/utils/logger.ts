@@ -1,26 +1,15 @@
-enum LogLevel {
-  DEBUG = 'DEBUG',
-  INFO = 'INFO',
-  WARN = 'WARN',
-  ERROR = 'ERROR',
-}
-
-const isDevelopment = __DEV__;
-
 const logger = {
   debug: (message: string, data?: unknown): void => {
-    if (isDevelopment) {
-      console.log(`[${LogLevel.DEBUG}] ${message}`, data);
-    }
+    console.log(`[DEBUG] ${message}`, data);
   },
   info: (message: string, data?: unknown): void => {
-    console.log(`[${LogLevel.INFO}] ${message}`, data);
+    console.log(`[INFO] ${message}`, data);
   },
   warn: (message: string, data?: unknown): void => {
-    console.warn(`[${LogLevel.WARN}] ${message}`, data);
+    console.warn(`[WARN] ${message}`, data);
   },
   error: (message: string, error?: unknown): void => {
-    console.error(`[${LogLevel.ERROR}] ${message}`, error);
+    console.error(`[ERROR] ${message}`, error);
   },
 };
 

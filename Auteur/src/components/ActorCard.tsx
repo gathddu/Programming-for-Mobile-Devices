@@ -1,12 +1,22 @@
 import React, { useMemo } from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { Actor } from '../types/index';
 
 interface ActorCardProps {
   readonly actor: Actor;
 }
 
+const COLORS = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8', '#F7DC6F'];
+
 export const ActorCard: React.FC<ActorCardProps> = ({ actor }) => {
+  const colorIndex = parseInt(actor.id) % COLORS.length;
+  const bgColor = COLORS[colorIndex];
+  const initials = actor.name
+    .split(' ')
+    .map((n) => n[0])
+    .join('')
+    .toUpperCase();
+
   const accessibilityLabel = useMemo(
     () => `${actor.name} as ${actor.character}`,
     [actor.name, actor.character]
@@ -19,11 +29,9 @@ export const ActorCard: React.FC<ActorCardProps> = ({ actor }) => {
       accessibilityLabel={accessibilityLabel}
       accessibilityRole="button"
     >
-      <Image
-        source={{ uri: actor.image }}
-        style={styles.image}
-        accessibilityIgnoresInvertColors
-      />
+      <View style={[styles.imageContainer, { backgroundColor: bgColor }]}>
+        <Text style={styles.initials}>{initials}</Text>
+      </View>
       <View style={styles.content}>
         <Text style={styles.name} numberOfLines={1}>
           {actor.name}
@@ -56,10 +64,16 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
   },
-  image: {
+  imageContainer: {
     width: '100%',
     height: 200,
-    backgroundColor: '#f0f0f0',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  initials: {
+    fontSize: 60,
+    fontWeight: '700',
+    color: '#fff',
   },
   content: {
     padding: 16,
