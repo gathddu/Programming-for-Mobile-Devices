@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { ErrorBoundary } from './src/components/ErrorBoundary.tsx';
-import { ActorsScreen } from './src/screens/ActorsScreen.tsx';
+import { HomeScreen } from './src/screens/HomeScreen.tsx';
 
 export default function App(): React.ReactElement {
   return (
     <ErrorBoundary>
       <View style={styles.container}>
-        <ActorsScreen />
+        <HomeScreen />
       </View>
     </ErrorBoundary>
   );
