@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import { ActorsScreen } from './ActorsScreen';
 import { FilmsScreen } from './FilmsScreen';
+import { FormScreen } from './FormScreen';
 import { TabType } from '../types/index';
 
 export const HomeScreen: React.FC = () => {
@@ -34,10 +35,23 @@ export const HomeScreen: React.FC = () => {
             Films
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.tab, activeTab === 'form' && styles.activeTab]}
+          onPress={() => setActiveTab('form')}
+          accessible={true}
+          accessibilityLabel="Form tab"
+          accessibilityRole="tab"
+          accessibilityState={{ selected: activeTab === 'form' }}
+        >
+          <Text style={[styles.tabText, activeTab === 'form' && styles.activeTabText]}>
+            Form
+          </Text>
+        </TouchableOpacity>
       </View>
       <View style={styles.content}>
         {activeTab === 'actors' && <ActorsScreen />}
         {activeTab === 'films' && <FilmsScreen />}
+        {activeTab === 'form' && <FormScreen />}
       </View>
     </View>
   );
@@ -65,7 +79,7 @@ const styles = StyleSheet.create({
     borderBottomColor: '#e91e63',
   },
   tabText: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: '600',
     color: '#999',
   },
