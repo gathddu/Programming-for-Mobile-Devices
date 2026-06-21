@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "Auteur",
+    "slug": "auteur-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

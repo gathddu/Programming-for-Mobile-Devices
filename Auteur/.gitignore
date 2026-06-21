@@ -1,15 +1,13 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
 # dependencies
 node_modules/
 
-# Expo
+# expo
 .expo/
 dist/
 web-build/
 expo-env.d.ts
 
-# Native
+# native
 .kotlin/
 *.orig.*
 *.jks
@@ -18,7 +16,7 @@ expo-env.d.ts
 *.key
 *.mobileprovision
 
-# Metro
+# metro
 .metro-health-check*
 
 # debug

@@ -1,0 +1,32 @@
+{
+  "name": "auteur-mobile",
+  "version": "1.0.0",
+  "description": "Professional React Native app for discovering films and actors",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "expo start",
+    "web": "expo start --web",
+    "android": "expo start --android",
+    "ios": "expo start --ios"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~3.2.3",
+    "@react-navigation/drawer": "^6.7.0",
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/stack": "^6.3.29",
+    "axios": "^1.7.0",
+    "expo": "^51.0.0",
+    "firebase": "^10.14.1",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "^0.74.0",
+    "react-native-gesture-handler": "^2.17.0",
+    "react-native-reanimated": "^3.10.0",
+    "react-native-safe-area-context": "^4.10.0",
+    "react-native-screens": "^3.31.0",
+    "react-native-web": "~0.19.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
